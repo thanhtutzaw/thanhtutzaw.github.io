@@ -3,94 +3,85 @@
     padding   : 0;
     box-sizing: border-box;
     user-select: none;
+    margin:0 auto;
 }
 
-html {
-    font-size:30px;
-    /* height:100vh; */
-}
-body{
+.container{
     height:100vh;
 }
-
-.container {
-
-
-    /* max-height:90vh; */
-    background: #5C5252;
-
-
+.header{
+    height:90vh;
+    background-color:cyan;
 }
-
-.header-svg {
-    position: absolute;
-
+.footer{
+    /* height:fit-content; */
+height         : 10vh;
+background     : #998F8F;
+color          : white;
+display        : flex;
+justify-content: space-evenly;
+align-items    : center;
 }
-
-.main-content {
-    max-height: 90vh;
-    margin-top: 3em;
-    /* min-width : 70vw; */
-    min-width : 60ch;
-    border    : 3px solid red;
-
-    margin: auto;
-
-    display        : flex;
-    justify-content: space-evenly;
-    padding        : 2em;
+.intro{
+min-height: 200px;
+max-width: 300px;
+    /* padding:6em 0; */
+    /* min-width:100%; */
+    /* padding:3em; */
+    border:3px solid red;
 }
-
-.intro {
-    margin-top:200px;
-    max-width    : 30ch;
-    padding      : 3em;
-    width        : 50%;
-    color        : black;
-    background   : #C4C4C4;
-    border-radius: 18px;
-}
-
-.contact {
-    margin-top:200px;
-    max-width    : 30ch;
-    width        : 50%;
-    padding      : 3em;
-    background   : #1D1D1D;
-    color        : white;
-    border-radius: 13px;
-}
-
-footer {
+.contact{
+max-width: 300px;
+min-height: 200px;
+    /* padding:6em 0; */
+    /* min-height: 300px; */
     
-   /* height:fit-content; */
-    /* height         : 100vh; */
-    background     : #998F8F;
-    color          : white;
-    display        : flex;
-    justify-content: space-evenly;
-    align-items    : center;
+    /* width:50px; */
+    border:3px solid red;
+}
+.flex-warp{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    /* width:20%; */
+    min-width:20%;
+    margin:auto ;
+min-height: 200px;
+    
+}
+.flex-warp >div{
+    flex:max(300px, 100%/4);
+    
+}
+
+/* .footer */
+
+.footer {
+
+    
 
 }
 
-footer ul {
+.footer ul {
     display       : flex;
     flex-direction: row;
     list-style    : none;
 }
 
-footer li {
+.footer li {
     margin-right: 2em;
 
 }
 
-footer a {
+.footer a {
     text-decoration: none;
     color          : white;
 }
-.submit-btn{
-    cursor:pointer;
+
+.submit-btn {
+    cursor: pointer;
 }
-.btn-text{
+
+.btn-text {
     pointer-events: none;
 }
